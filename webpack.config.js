@@ -4,6 +4,15 @@ const path = require('node:path');
 
 module.exports = (env) => {
     return {
-        mode: env.mode
+        entry: {
+            app: './src/main.ts'
+        },
+        mode: env.mode,
+        watchOptions: {
+            ignored: [
+                '**/dist/**',
+                '**/test/**'
+            ]
+        }
     };
 };
