@@ -7,6 +7,15 @@ module.exports = (env) => {
         entry: {
             app: './src/main.ts'
         },
+        module: {
+            rules: [
+                {
+                    test: /\.tsx?$/,
+                    use: 'ts-loader',
+                    exclude: /node_modules/
+                }
+            ]
+        },
         mode: env.mode,
         watchOptions: {
             ignored: [
@@ -20,5 +29,6 @@ module.exports = (env) => {
                 '@': path.resolve(__dirname, './src')
             } 
         }
+
     };
 };
