@@ -32,7 +32,11 @@ module.exports = (env) => {
             alias: {
                 '@': path.resolve(__dirname, './src')
             } 
-        }
-
+        },
+        plugins: [
+            new HtmlWebpackPlugin({
+                template: './src/index.html'
+            })
+        ]
     };
 };
