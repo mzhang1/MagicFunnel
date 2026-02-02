@@ -15,7 +15,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --watch --env mode=development"
+    "dev": "webpack --watch --env mode=development",
+    "test": "jest"
   },
   "devDependencies": {
     "css-loader": "^7.1.3",
