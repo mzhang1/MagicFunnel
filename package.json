@@ -15,7 +15,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --watch --env prod=false",
+    "dev": "webpack --watch",
+    "build": "webpack --watch --env prod=true",
     "test": "jest"
   },
   "devDependencies": {
