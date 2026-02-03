@@ -10,18 +10,13 @@ module.exports = (env) => {
         module: {
             rules: [
                 {
-                    test: /\.tsx?$/i,
+                    test: /\.tsx?$/,
                     use: 'ts-loader',
                     exclude: /node_modules/
                 },
                 {
-                    test: /\.css?$/i,
-                    use: {
-                        loader: ['style-loader', 'css-loader', 'postcss-loader'],
-                        options: {
-                            url: false
-                        } 
-                    }
+                    test: /\.css?$/,
+                    use: ['style-loader', 'css-loader', 'postcss-loader']
                 }
             ]
         },
