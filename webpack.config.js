@@ -15,8 +15,13 @@ module.exports = (env) => {
                     exclude: /node_modules/
                 },
                 {
-                    test: /\.css?$/,
-                    use: ['style-loader', 'css-loader', 'postcss-loader']
+                    test: /\.css?$/i,
+                    use: {
+                        loader: ['style-loader', 'css-loader', 'postcss-loader'],
+                        options: {
+                            url: false
+                        } 
+                    }
                 }
             ]
         },
