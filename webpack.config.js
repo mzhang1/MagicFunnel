@@ -20,7 +20,7 @@ module.exports = (env) => {
                 }
             ]
         },
-        mode: env.mode,
+        mode: env.prod ? 'production' : 'development',
         watchOptions: {
             ignored: [
                 '**/dist/**',
