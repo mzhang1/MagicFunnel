@@ -16,12 +16,7 @@ module.exports = (env) => {
                 },
                 {
                     test: /\.css?$/i,
-                    use: {
-                        loader: ['style-loader', 'css-loader', 'postcss-loader'],
-                        options: {
-                            url: false
-                        } 
-                    }
+                    use: ['style-loader', 'css-loader', 'postcss-loader']
                 }
             ]
         },
