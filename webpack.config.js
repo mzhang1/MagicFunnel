@@ -5,7 +5,7 @@ const path = require('node:path');
 module.exports = (env) => {
     return {
         entry: {
-            app: './src/main.ts'
+            app: './src/main.tsx'
         },
         module: {
             rules: [
