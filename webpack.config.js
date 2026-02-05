@@ -12,7 +12,7 @@ module.exports = (env) => {
                 directory: path.join(__dirname, "dist")
             },
             compress: true,
-            port: 9000
+            port: env.port
         },
         module: {
             rules: [
