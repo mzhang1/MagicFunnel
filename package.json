@@ -17,6 +17,7 @@
   "scripts": {
     "dev": "webpack --watch",
     "build": "webpack --watch --env prod=true",
+    "serve": "webpack serve --env port=8088",
     "test": "jest"
   },
   "devDependencies": {
