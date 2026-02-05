@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'GothamNarrow';
+    src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 @import "tailwindcss";
 
 html,
 body {
     height: 100%;
+    font-family: 'GothamNarrow';
 }
