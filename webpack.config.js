@@ -28,9 +28,13 @@ module.exports = (env) => {
                     test: /\.css?$/i,
                     use: [
                         { loader: 'style-loader' },
-                        { loader: 'css-loader', options: { url: false } },
+                        { loader: 'css-loader' },
                         { loader: 'postcss-loader' }
                     ]
+                },
+                {
+                    test: /\.(woff|otf)?$/i,
+                    type: 'asset/resource'
                 }
             ]
         },
