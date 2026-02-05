@@ -7,6 +7,9 @@ module.exports = (env) => {
         entry: {
             app: './src/main.tsx'
         },
+        output: {
+            filename: 'bundle.js'
+        },
         devServer: {
             static: {
                 directory: path.join(__dirname, "dist")
