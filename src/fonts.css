@@ -44,3 +44,9 @@
     src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Thin.otf') format('opentype');
     font-weight: normal;
 }
+@font-face {
+    font-family: 'Gotham Narrow Light';
+    src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Thin\ Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
