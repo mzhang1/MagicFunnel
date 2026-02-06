@@ -1,4 +1,4 @@
-import '@/fonts.css';
+import '@/css/fonts.css';
 import '@/globals.css';
 
 import { createRoot, type Container, type Root } from "react-dom/client";
