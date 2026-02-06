@@ -3,22 +3,26 @@
     src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
+    font-size: medium;
 }
 @font-face {
     font-family: 'GothamNarrow';
     src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Medium\ Italic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
+    font-size: medium;
 }
 @font-face {
     font-family: 'GothamNarrow';
     src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
+    font-size: medium;
 }
 @font-face {
     font-family: 'GothamNarrow';
     src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Bold\ Italic.otf') format('opentype');
     font-weight: bold;
     font-style: italic;
+    font-size: medium;
 }
