@@ -29,13 +29,13 @@
 
 @font-face {
     font-family: 'Gotham Narrow Light';
-    src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Light.otf') format('opentype');
+    src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Book.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'Gotham Narrow Light';
-    src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Light\ Italic.otf') format('opentype');
+    src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Book\ Italic.otf') format('opentype');
     font-weight: bold;
     font-style: italic;
 }
