@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('node:path');
 
 module.exports = (env) => {
+    const devMode = !env.prod;
     return {
         entry: {
             app: './src/main.tsx'
