@@ -10,3 +10,9 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'GothamNarrow';
+    src: url('./resources/fonts/Gotham-Narrow-Font/Gotham\ Narrow-Medium\ Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
