@@ -29,9 +29,9 @@ module.exports = (env) => {
                 {
                     test: /\.css?$/i,
                     use: [
-                        devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-                        'css-loader',
-                        'postcss-loader'
+                        { loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader },
+                        { loader: 'css-loader' },
+                        { loader: 'postcss-loader' }
                     ]
                 },
                 {
@@ -57,7 +57,7 @@ module.exports = (env) => {
             new HtmlWebpackPlugin({
                 template: './src/index.html'
             }),
-            devMode ? [] : new MiniCssExtractPlugin()
+            devMode ? () => {} : new MiniCssExtractPlugin()
         ]
     };
 };
