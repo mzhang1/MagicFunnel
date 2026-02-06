@@ -29,7 +29,7 @@ module.exports = (env) => {
                 {
                     test: /\.css?$/i,
                     use: [
-                        'style-loader',
+                        devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
                         'css-loader',
                         'postcss-loader'
                     ]
@@ -40,7 +40,7 @@ module.exports = (env) => {
                 }
             ]
         },
-        mode: env.prod ? 'production' : 'development',
+        mode: devMode ? 'production' : 'development',
         watchOptions: {
             ignored: [
                 '**/dist/**',
@@ -56,7 +56,8 @@ module.exports = (env) => {
         plugins: [
             new HtmlWebpackPlugin({
                 template: './src/index.html'
-            })
+            }),
+            devMode ? [] : new MiniCssExtractPlugin()
         ]
     };
 };
