@@ -2,6 +2,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('node:path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = (env) => {
     const devMode = !env.prod;
@@ -57,6 +58,7 @@ module.exports = (env) => {
             new HtmlWebpackPlugin({
                 template: './src/index.html'
             }),
+            new BundleAnalyzerPlugin(),
             devMode ? () => {} : new MiniCssExtractPlugin()
         ]
     };
