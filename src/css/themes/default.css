@@ -1,3 +1,7 @@
 @theme {
     --default-font-family: 'Gotham Narrow Light';
+
+    --primary: #0C0F11;
+    --secondary: #012169;
+    --tertiary: #EA3601;
 }
