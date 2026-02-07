@@ -58,7 +58,9 @@ module.exports = (env) => {
             new HtmlWebpackPlugin({
                 template: './src/index.html'
             }),
-            new BundleAnalyzerPlugin(),
+            new BundleAnalyzerPlugin({
+                generateStatsFile: true
+            }),
             devMode ? () => {} : new MiniCssExtractPlugin()
         ]
     };
