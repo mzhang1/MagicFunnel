@@ -1,5 +1,5 @@
 const Navbar = () => {
-    return <div className="w-full h-2.5 bg-primary">
+    return <div className="w-full h-16 bg-primary flex">
         
     </div>;
 }
