@@ -1,8 +1,7 @@
+@import 'tailwindcss';
+
 @theme {
     --default-font-family: 'Gotham Narrow Light', sans-serif;
     --font-sans: 'Gotham Narrow Light', sans-serif;
 
-    --primary: #0C0F11;
-    --secondary: #012169;
-    --tertiary: #EA3601;
 }
