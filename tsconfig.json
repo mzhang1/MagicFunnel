@@ -16,8 +16,10 @@
         "isolatedModules": true,
         "noUncheckedSideEffectImports": true,
         "skipLibCheck": true,
+        "esModuleInterop": true,
 
-        "esModuleInterop": true
+        "lib": ["dom", "esnext"],
+        "moduleResolution": "bundler"
     },
     "include": [
         "src/**/*"
