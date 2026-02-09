@@ -1,8 +1,9 @@
 type NavbarButtonOptions = {
-    title: string
+    title: string,
+    disabled: boolean
 }
 
-const NavbarButton = ( { title } : NavbarButtonOptions ) => {
+const NavbarButton = ( { title, disabled } : NavbarButtonOptions ) => {
     return <button className="h-full">
         { title }
     </button>
