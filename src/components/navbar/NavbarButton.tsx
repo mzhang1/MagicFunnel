@@ -1,13 +1,14 @@
 type NavbarButtonOptions = {
     title: string,
     disabled: boolean,
-    onClick: () => {}
+    onClick: () => {},
+    onHover: () => {}
 }
 
-const NavbarButton = ( { title, disabled, onClick } : NavbarButtonOptions ) => {
+const NavbarButton = ( { title, disabled, onClick, onHover } : NavbarButtonOptions ) => {
     const buttonStatus: string = !disabled ? "cursor-pointer" : "";
 
-    return <button className={"h-full " + buttonStatus} onClick={onClick}>
+    return <button className={"h-full " + buttonStatus} onClick={onClick} onMouseOver={onHover}>
         { title }
     </button>
 };
