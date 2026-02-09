@@ -4,7 +4,9 @@ type NavbarButtonOptions = {
 }
 
 const NavbarButton = ( { title, disabled } : NavbarButtonOptions ) => {
-    return <button className="h-full">
+    const buttonStatus: string = !disabled ? "cursor-pointer" : "";
+
+    return <button className={"h-full " + buttonStatus}>
         { title }
     </button>
 };
