@@ -3,7 +3,7 @@ type NavbarButtonOptions = {
 }
 
 const NavbarButton = ( { title } : NavbarButtonOptions ) => {
-    return <button>
+    return <button className="h-full">
         { title }
     </button>
 };
