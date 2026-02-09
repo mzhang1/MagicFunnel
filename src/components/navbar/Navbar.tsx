@@ -1,7 +1,7 @@
 import NavbarButton from "@/components/navbar/NavbarButton";
 
 const Navbar = () => {
-    const blockClassList = "h-full flex gap-1";
+    const blockClassList = "h-full flex gap-1 p-8";
 
     return <div className="w-full h-16 bg-primary flex justify-between">
         <div className={blockClassList}>
