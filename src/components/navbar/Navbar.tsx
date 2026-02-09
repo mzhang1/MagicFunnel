@@ -1,3 +1,5 @@
+import NavbarButton from "@/components/navbar/NavbarButton";
+
 const Navbar = () => {
     return <div className="w-full h-16 bg-primary flex justify-between">
         <div className="h-full flex">
