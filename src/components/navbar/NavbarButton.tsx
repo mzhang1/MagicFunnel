@@ -8,9 +8,9 @@ type NavbarButtonOptions = {
 const NavbarButton = ( { title, disabled, onClick, onHover } : NavbarButtonOptions ) => {
     const buttonStatus: string = !disabled ? "cursor-pointer" : "";
 
-    return <button className={"h-full p-3 " + buttonStatus} onClick={onClick} onMouseOver={onHover}>
+    return <li className={"h-full p-3 " + buttonStatus} onClick={onClick} onMouseOver={onHover}>
         { title }
-    </button>
+    </li>
 };
 
 export default NavbarButton;
