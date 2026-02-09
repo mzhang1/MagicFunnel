@@ -1,12 +1,14 @@
 import NavbarButton from "@/components/navbar/NavbarButton";
 
 const Navbar = () => {
+    const blockClassList = "h-full flex gap-1";
+
     return <div className="w-full h-16 bg-primary flex justify-between">
-        <div className="h-full flex">
+        <div className={blockClassList}>
             <NavbarButton title="Button 1" />
             <NavbarButton title="Button 2" />
         </div>
-        <div className="h-full flex">
+        <div className={blockClassList}>
             <NavbarButton title="Button right 1" />
             <NavbarButton title="Button right 2" />
         </div>
