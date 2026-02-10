@@ -1,5 +1,5 @@
 const Caret = () => {
-    return <div className="w-0 h-0 border-b-10 border-white z-1">
+    return <div className="w-0 h-0 border-10 border-x-transparent border-t-transparent border-b-white z-1">
     </div>
 }
 
