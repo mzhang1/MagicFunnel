@@ -7,6 +7,8 @@ const Navbar = () => {
     let [currentHoveredButton, updateHoveredButton] = useState("");
 
     useEffect(() => {
+        console.log(currentHoveredButton);
+
         return () => {
             currentHoveredButton = "";
         }
@@ -16,12 +18,12 @@ const Navbar = () => {
 
     return <nav className="w-full h-14 bg-primary flex justify-between text-primary-font">
         <ul className={blockClassList}>
-            <NavbarButton title="Button 1"  />
-            <NavbarButton title="Button 2" />
+            <NavbarButton title="Button 1" onHover={() => updateHoveredButton("Button 1")} />
+            <NavbarButton title="Button 2" onHover={() => updateHoveredButton("Button 2")} />
         </ul>
         <ul className={blockClassList}>
-            <NavbarButton title="Button right 1" />
-            <NavbarButton title="Button right 2" />
+            <NavbarButton title="Button right 1" onHover={() => updateHoveredButton("Button right 1")} />
+            <NavbarButton title="Button right 2" onHover={() => updateHoveredButton("Button right 2")} />
         </ul>
     </nav>;
 }
