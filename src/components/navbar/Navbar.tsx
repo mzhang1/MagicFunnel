@@ -1,4 +1,5 @@
 import NavbarButton from "@/components/navbar/NavbarButton";
+import NavbarDropdown from "@/components/navbar/NavbarDropdown";
 
 const Navbar = () => {
     const blockClassList = "h-full flex gap-1 p-0";
