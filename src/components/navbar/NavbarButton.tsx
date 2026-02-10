@@ -1,8 +1,8 @@
 type NavbarButtonOptions = {
     title: string,
     disabled?: boolean,
-    onClick?: () => {},
-    onHover?: () => {}
+    onClick?: () => void,
+    onHover?: () => void
 }
 
 const NavbarButton = ( { title, disabled, onClick, onHover } : NavbarButtonOptions ) => {
