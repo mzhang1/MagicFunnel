@@ -1,8 +1,10 @@
+import type { DOMAttributes } from "react";
+
 type NavbarButtonOptions = {
     title: string,
     disabled?: boolean,
     onClick?: React.MouseEventHandler<HTMLButtonElement>,
-    onHover?: () => void
+    onHover?: React.MouseEventHandler<HTMLButtonElement>
 }
 
 const NavbarButton = ( { title, disabled, onClick, onHover } : NavbarButtonOptions ) => {
