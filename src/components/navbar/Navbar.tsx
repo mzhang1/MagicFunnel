@@ -21,19 +21,23 @@ const Navbar = () => {
     }, [currentHoveredButton]);
 
     const buttonList: NavbarButtonData[] = [
-        { 
+        {
+            id: "Button1",
             text: "Button 1",
             component: <Button1Dropdown />
         },
         {
+            id: "Button2",
             text: "Button 2",
             component: <Button2Dropdown />
         },
         {
+            id: "Button3",
             text: "Button 3",
             component: <Button3Dropdown />
         },
         {
+            id: "Button4",
             text: "Button 4",
             component: <Button4Dropdown />
         }
@@ -47,9 +51,12 @@ const Navbar = () => {
                 buttonList.map((singleButton: NavbarButtonData) => {
                     return <li>
                         <NavbarButton title={singleButton.text}></NavbarButton>
-                        <NavbarDropdown>
-                            {singleButton.component}
-                        </NavbarDropdown>
+                        {
+                            currentHoveredButton == singleButton.
+                            <NavbarDropdown>
+                                {singleButton.component}
+                            </NavbarDropdown>
+                        }
                     </li>
                 })
             }
