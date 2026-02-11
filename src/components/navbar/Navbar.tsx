@@ -52,10 +52,11 @@ const Navbar = () => {
                     return <li>
                         <NavbarButton title={singleButton.text}></NavbarButton>
                         {
-                            currentHoveredButton == singleButton.
+                            currentHoveredButton == singleButton.id ?
                             <NavbarDropdown>
                                 {singleButton.component}
                             </NavbarDropdown>
+                            : <></>
                         }
                     </li>
                 })
