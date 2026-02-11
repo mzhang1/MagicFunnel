@@ -12,6 +12,14 @@ import type { NavbarButtonData } from "./types";
 const Navbar = () => {
     let [currentHoveredButton, updateHoveredButton] = useState<string>("");
 
+    useEffect(() => {
+        console.log(currentHoveredButton);
+
+        return () => {
+            currentHoveredButton = "";
+        }
+    }, [currentHoveredButton]);
+
     const buttonList: NavbarButtonData[] = [
         { 
             text: "Button 1",
@@ -29,15 +37,7 @@ const Navbar = () => {
             text: "Button 4",
             component: <Button4Dropdown />
         }
-    ]
-
-    useEffect(() => {
-        console.log(currentHoveredButton);
-
-        return () => {
-            currentHoveredButton = "";
-        }
-    }, [currentHoveredButton])
+    ];
 
     const blockClassList = "h-full flex gap-1 p-0";
 
