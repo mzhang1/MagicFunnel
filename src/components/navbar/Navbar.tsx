@@ -4,6 +4,7 @@ import NavbarButton from "@/components/navbar/NavbarButton";
 import NavbarDropdown from "@/components/navbar/NavbarDropdown";
 import { Button1Dropdown } from "@/components/navbar/Button1Dropdown";
 import { Button2Dropdown } from "@/components/navbar/Button2Dropdown";
+import { Button3Downdown } from "@/components/navbar/Button3Dropdown";
 
 import type { NavbarButtonData } from "./types";
 
@@ -18,6 +19,10 @@ const Navbar = () => {
         {
             text: "Button 2",
             component: <Button2Dropdown />
+        },
+        {
+            text: "Button 3",
+            component: <Button3Downdown />
         }
     ]
 
