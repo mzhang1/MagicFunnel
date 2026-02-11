@@ -12,9 +12,10 @@ const Caret = () => {
     return <div className={classNames}></div>
 }
 
-const NavbarDropdown = () => {
+const NavbarDropdown = ({ children }: { children: React.ReactNode}) => {
     return <div>
         <Caret />
+        {children}
     </div>
 }
 
