@@ -18,10 +18,18 @@ const Navbar = () => {
 
     return <nav className="w-full h-14 bg-primary flex justify-center text-primary-font">
         <ul className={blockClassList}>
-            <NavbarButton title="Button 1" onHover={() => updateHoveredButton("Button 1")} />
-            <NavbarButton title="Button 2" onHover={() => updateHoveredButton("Button 2")} />
-            <NavbarButton title="Button 3" onHover={() => updateHoveredButton("Button 3")} />
-            <NavbarButton title="Button 4" onHover={() => updateHoveredButton("Button 4")} />
+            <li>
+                <NavbarButton title="Button 1" onHover={() => updateHoveredButton("Button 1")} />
+            </li>
+            <li>
+                <NavbarButton title="Button 2" onHover={() => updateHoveredButton("Button 2")} />
+            </li>
+            <li>
+                <NavbarButton title="Button 3" onHover={() => updateHoveredButton("Button 3")} />
+            </li>
+            <li>
+                <NavbarButton title="Button 4" onHover={() => updateHoveredButton("Button 4")} />
+            </li>
         </ul>
     </nav>;
 }
