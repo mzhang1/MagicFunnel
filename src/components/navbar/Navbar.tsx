@@ -4,7 +4,7 @@ import NavbarButton from "@/components/navbar/NavbarButton";
 import NavbarDropdown from "@/components/navbar/NavbarDropdown";
 
 const Navbar = () => {
-    let [currentHoveredButton, updateHoveredButton] = useState("");
+    let [currentHoveredButton, updateHoveredButton] = useState<string>("");
 
     useEffect(() => {
         console.log(currentHoveredButton);
