@@ -2,9 +2,19 @@ import { useState, useEffect } from "react";
 
 import NavbarButton from "@/components/navbar/NavbarButton";
 import NavbarDropdown from "@/components/navbar/NavbarDropdown";
+import { Button1Dropdown } from "@/components/navbar/Button1Dropdown";
+
+import type { NavbarButtonData } from "./types";
 
 const Navbar = () => {
     let [currentHoveredButton, updateHoveredButton] = useState<string>("");
+
+    const buttonList: NavbarButtonData[] = [
+        { 
+            text: "Button 1",
+            component: <Button1Dropdown />
+        }
+    ]
 
     useEffect(() => {
         console.log(currentHoveredButton);
