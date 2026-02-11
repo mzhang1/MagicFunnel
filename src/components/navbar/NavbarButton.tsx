@@ -1,7 +1,7 @@
 type NavbarButtonOptions = {
     title: string,
     disabled?: boolean,
-    onClick?: () => void,
+    onClick?: React.MouseEventHandler<HTMLLIElement>,
     onHover?: () => void
 }
 
