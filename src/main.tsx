@@ -7,4 +7,4 @@ import MainPage from './pages/MainPage';
 
 const container: Container = document.getElementById("mainContent") as Element
 const root: Root = createRoot(container);
-root.render((<MainPage title="Hello world !" />) as React.ReactNode);
+root.render((<MainPage />) as React.ReactNode);

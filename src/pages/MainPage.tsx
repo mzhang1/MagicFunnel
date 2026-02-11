@@ -1,9 +1,8 @@
 import Navbar from "@/components/navbar/Navbar";
 
-const MainPage = ({title}: {title: string}) => {
+const MainPage = () => {
     return <>
         <Navbar />
-        {title}
     </>
 } 
 
