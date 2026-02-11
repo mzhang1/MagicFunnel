@@ -1,16 +1,16 @@
 type NavbarButtonOptions = {
     title: string,
     disabled?: boolean,
-    onClick?: React.MouseEventHandler<HTMLLIElement>,
+    onClick?: React.MouseEventHandler<HTMLButtonElement>,
     onHover?: () => void
 }
 
 const NavbarButton = ( { title, disabled, onClick, onHover } : NavbarButtonOptions ) => {
     const buttonStatus: string = !disabled ? "cursor-pointer" : "";
 
-    return <li className={"h-full p-3 " + buttonStatus} onClick={onClick} onMouseOver={onHover}>
+    return <button className={"h-full p-3 " + buttonStatus} onClick={onClick} onMouseOver={onHover}>
         { title }
-    </li>
+    </button>
 };
 
 export default NavbarButton;
