@@ -4,8 +4,8 @@ import NavbarButton from "@/components/navbar/NavbarButton";
 import NavbarDropdown from "@/components/navbar/NavbarDropdown";
 import { Button1Dropdown } from "@/components/navbar/Button1Dropdown";
 import { Button2Dropdown } from "@/components/navbar/Button2Dropdown";
-import { Button3Downdown } from "@/components/navbar/Button3Dropdown";
-import { Button4Downdown } from "@/components/navbar/Button4Dropdown";
+import { Button3Dropdown } from "@/components/navbar/Button3Dropdown";
+import { Button4Dropdown } from "@/components/navbar/Button4Dropdown";
 
 import type { NavbarButtonData } from "./types";
 
@@ -23,11 +23,11 @@ const Navbar = () => {
         },
         {
             text: "Button 3",
-            component: <Button3Downdown />
+            component: <Button3Dropdown />
         },
         {
             text: "Button 4",
-            component: <Button4Downdown />
+            component: <Button4Dropdown />
         }
     ]
 
