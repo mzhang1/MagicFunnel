@@ -1,5 +1,3 @@
-import type { DOMAttributes } from "react";
-
 type NavbarButtonOptions = {
     title: string,
     disabled?: boolean,
