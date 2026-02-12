@@ -1,4 +1,5 @@
 import type { NavbarLinkData } from '@/components/navbar/NavbarLink';
+import NavbarLink from '@/components/navbar/NavbarLink';
 
 export const Button1Dropdown = () => {
     const links: NavbarLinkData[] = [
@@ -17,8 +18,8 @@ export const Button1Dropdown = () => {
     ];
 
     return <div className="w-sm bg-white">
-        <a className="text-dark-blue-link">Link 1</a>
-        <a className="text-dark-blue-link">Link 2</a>
-        <a className="text-dark-blue-link">Link 3</a>
+        {links.map((singleLink: NavbarLinkData) => {
+            return <NavbarLink {...singleLink}></NavbarLink>
+        })}
     </div>
 }
