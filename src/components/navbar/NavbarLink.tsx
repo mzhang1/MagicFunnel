@@ -1,4 +1,4 @@
-type NavbarLinkData = {
+export type NavbarLinkData = {
     text: string,
     href: string
 }
