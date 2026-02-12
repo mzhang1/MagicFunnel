@@ -17,7 +17,7 @@ export const Button1Dropdown = () => {
         }
     ];
 
-    return <div className="w-sm bg-white">
+    return <div className="w-sm">
         {links.map((singleLink: NavbarLinkData) => {
             return <NavbarLink {...singleLink}></NavbarLink>
         })}
