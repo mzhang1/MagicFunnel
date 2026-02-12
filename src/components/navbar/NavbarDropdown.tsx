@@ -7,6 +7,8 @@ const Caret = () => {
         border-t-transparent 
         border-b-white 
         z-1
+        ml-auto
+        mr-auto
     `;
 
     return <div className={classNames}></div>
