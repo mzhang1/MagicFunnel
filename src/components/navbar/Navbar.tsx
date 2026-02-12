@@ -50,7 +50,10 @@ const Navbar = () => {
             {
                 buttonList.map((singleButton: NavbarButtonData) => {
                     return <li>
-                        <NavbarButton title={singleButton.text} onHover={() => updateHoveredButton(singleButton.id)}></NavbarButton>
+                        <NavbarButton 
+                            title={singleButton.text} 
+                            onHover={() => updateHoveredButton(singleButton.id)}>
+                        </NavbarButton>
                         {
                             currentHoveredButton == singleButton.id ?
                             <NavbarDropdown>
