@@ -13,7 +13,7 @@ const Caret = () => {
 }
 
 const NavbarDropdown = ({ children }: { children: React.ReactNode}) => {
-    return <div className="relative">
+    return <div className="absolute">
         <Caret />
         <div className="rounded-lg">
             {children}
