@@ -16,9 +16,9 @@ export const Button2Dropdown = () => {
         }
     ];
 
-    return <div className='w-sm'>
+    return <>
         {links.map((singleLink: NavbarLinkData) => {
             return <a href={singleLink.href}>{singleLink.text}</a>
         })}
-    </div>
+    </>
 }
