@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import NavbarButton from "@/components/navbar/NavbarButton";
 import NavbarDropdown from "@/components/navbar/NavbarDropdown";
@@ -11,14 +11,6 @@ import type { NavbarButtonData } from "./types";
 
 const Navbar = () => {
     let [currentHoveredButton, updateHoveredButton] = useState<string>("");
-
-    useEffect(() => {
-        console.log(currentHoveredButton);
-
-        return () => {
-            currentHoveredButton = "";
-        }
-    }, [currentHoveredButton]);
 
     const buttonList: NavbarButtonData[] = [
         {
