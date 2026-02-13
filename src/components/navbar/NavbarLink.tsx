@@ -7,7 +7,9 @@ export type NavbarLinkData = {
 }
 
 const NavbarLink = ({ text, href, onClick } : NavbarLinkData) => {
-    return <a href={href} className="text-dark-blue-link" onClick={onClick}>{text}</a>
+    return <a href={href} className="text-dark-blue-link" onClick={onClick}>
+        {text}
+    </a>
 }
 
 export default NavbarLink;
