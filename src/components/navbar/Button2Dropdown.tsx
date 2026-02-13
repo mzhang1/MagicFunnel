@@ -1,4 +1,5 @@
 import type { NavbarLinkData } from '@/components/navbar/NavbarLink';
+import NavbarLink from '@/components/navbar/NavbarLink';
 
 export const Button2Dropdown = () => {
     const links: NavbarLinkData[] = [
@@ -18,7 +19,7 @@ export const Button2Dropdown = () => {
 
     return <>
         {links.map((singleLink: NavbarLinkData) => {
-            return <a href={singleLink.href}>{singleLink.text}</a>
+            return <NavbarLink {...singleLink}></NavbarLink>
         })}
     </>
 }
