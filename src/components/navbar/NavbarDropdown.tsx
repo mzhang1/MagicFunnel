@@ -17,7 +17,7 @@ const Caret = () => {
 const NavbarDropdown = ({ children }: { children: React.ReactNode }) => {
     return <div className="absolute -translate-x-4/10">
         <Caret />
-        <div className="rounded-lg p-2 bg-white">
+        <div className="rounded-lg p-2 bg-white w-sm">
             {children}
         </div>
     </div>
