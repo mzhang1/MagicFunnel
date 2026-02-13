@@ -18,8 +18,8 @@ export const Button1Dropdown = () => {
     ];
 
     return <>
-        {links.map((singleLink: NavbarLinkData) => {
-            return <NavbarLink {...singleLink}></NavbarLink>
+        {links.map((singleLink: NavbarLinkData, index: React.Key) => {
+            return <NavbarLink key={index} {...singleLink}></NavbarLink>
         })}
     </>
 }
