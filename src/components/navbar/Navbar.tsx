@@ -40,9 +40,9 @@ const Navbar = () => {
         onMouseLeave={() => updateHoveredButton("")}>
         <ul className="h-full flex gap-1 p-0">
             {
-                buttonList.map((singleButton: NavbarButtonData) => {
-                    return <li>
-                        <NavbarButton 
+                buttonList.map((singleButton: NavbarButtonData, index: React.Key) => {
+                    return <li key={index}>
+                        <NavbarButton
                             title={singleButton.text} 
                             onHover={() => updateHoveredButton(singleButton.id)}>
                         </NavbarButton>
