@@ -1,5 +1,5 @@
 export const Button3Dropdown = () => {
-    return <div>
+    return <div className="w-sm">
 
     </div>
 }
