@@ -2,7 +2,7 @@ import type { MouseEventHandler } from "react";
 
 export type NavbarLinkData = {
     text: string,
-    href: string,
+    href?: string,
     onClick?: MouseEventHandler
 }
 
