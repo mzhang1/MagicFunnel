@@ -45,7 +45,9 @@ const Navbar = () => {
 
     const blockClassList = "h-full flex gap-1 p-0";
 
-    return <nav className="w-full h-14 bg-primary flex justify-center text-primary-font">
+    return <nav 
+        className="w-full h-14 bg-primary flex justify-center text-primary-font" 
+        onMouseLeave={() => updateHoveredButton("")}>
         <ul className={blockClassList}>
             {
                 buttonList.map((singleButton: NavbarButtonData) => {
