@@ -6,7 +6,7 @@ import { Button2Dropdown } from "@/components/navbar/Button2Dropdown";
 import { Button3Dropdown } from "@/components/navbar/Button3Dropdown";
 import { Button4Dropdown } from "@/components/navbar/Button4Dropdown";
 
-import type { NavbarButtonData } from "./types";
+import type { NavbarButtonData } from "@/components/navbar/types";
 
 const Navbar = () => {
     let [currentHoveredButton, updateHoveredButton] = useState<string>("");
