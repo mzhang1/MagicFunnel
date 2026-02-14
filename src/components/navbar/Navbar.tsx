@@ -41,7 +41,7 @@ const Navbar = () => {
             {
                 buttonList.map((singleButton: NavbarButtonData, index: React.Key) => {
                     return <li key={index} className="w-40 text-center" onMouseOver={() => updateHoveredButton(singleButton.id)}>
-                        <h1>{singleButton.text}</h1>
+                        <>{singleButton.text}</>
                         {
                             currentHoveredButton == singleButton.id ?
                             <NavbarDropdown>
