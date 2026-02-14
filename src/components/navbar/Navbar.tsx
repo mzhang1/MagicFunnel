@@ -41,7 +41,7 @@ const Navbar = () => {
         <ul className="h-full flex gap-1 p-0">
             {
                 buttonList.map((singleButton: NavbarButtonData, index: React.Key) => {
-                    return <li key={index}>
+                    return <li key={index} className="w-40 text-center">
                         <NavbarButton
                             title={singleButton.text} 
                             onHover={() => updateHoveredButton(singleButton.id)}>
