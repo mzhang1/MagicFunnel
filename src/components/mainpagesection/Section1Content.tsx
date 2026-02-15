@@ -1,5 +1,5 @@
 const Section1Content = () => {
-    return <section key="section1" className="w-full h-1/2">
+    return <section key="section1" className="w-full h-120">
         {"Section 1"}
     </section>
 }
