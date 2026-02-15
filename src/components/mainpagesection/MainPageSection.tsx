@@ -1,7 +1,7 @@
 const MainPageSection = ({ children } : { children: React.ReactNode }) => {
-    return <div className="w-full h-1/2">
+    return <section className="w-full h-1/2">
         {children}
-    </div>
+    </section>
 }
 
 export default MainPageSection;
