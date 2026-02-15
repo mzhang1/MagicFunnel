@@ -1,3 +1,5 @@
+'use strict';
+
 import '@/css/fonts/GothamNarrowMedium.css';
 import '@/css/fonts/GothamNarrowLight.css';
 import '@/css/globals.css';
