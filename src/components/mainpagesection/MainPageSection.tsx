@@ -1,5 +1,5 @@
 const MainPageSection = ({ children } : { children: React.ReactNode }) => {
-    return <div>
+    return <div className="w-full h-1/2">
         {children}
     </div>
 }
