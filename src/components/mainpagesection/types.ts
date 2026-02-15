@@ -1,4 +1,4 @@
-export type SectionConfig = {
+export type SectionData = {
     id: string,
     component: React.ReactElement
 };
