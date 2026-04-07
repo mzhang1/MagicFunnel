@@ -48,8 +48,8 @@ const Navbar = () => {
     return <nav className="w-full h-14 bg-primary flex justify-center text-primary-font">
         <ul className={blockClassList}>
             {
-                buttonList.map((singleButton: NavbarButtonData) => {
-                    return <li>
+                buttonList.map((singleButton: NavbarButtonData, index: number) => {
+                    return <li key={index}>
                         <NavbarButton 
                             title={singleButton.text} 
                             onHover={() => updateHoveredButton(singleButton.id)}>
