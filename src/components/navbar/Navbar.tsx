@@ -46,7 +46,9 @@ const Navbar = () => {
         <ul className="h-full flex gap-1 p-0">
             {
                 buttonList.map((singleButton: NavbarButtonData, index: React.Key) => {
-                    return <li key={index} onMouseLeave={() => updateHoveredButton("")}>
+                    return <li key={index} 
+                        className="w-30 flex justify-center items-center cursor-pointer" 
+                        onMouseLeave={() => updateHoveredButton("")}>
                         <NavbarButton 
                             title={singleButton.text} 
                             onHover={() => updateHoveredButton(singleButton.id)}>
