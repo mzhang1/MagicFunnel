@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
+import NavbarButton from "@/components/navbar/NavbarButton";
 import NavbarDropdown from "@/components/navbar/NavbarDropdown";
 import { Button1Dropdown } from "@/components/navbar/Button1Dropdown";
 import { Button2Dropdown } from "@/components/navbar/Button2Dropdown";
@@ -10,6 +11,11 @@ import type { NavbarButtonData } from "@/components/navbar/types";
 
 const Navbar = () => {
     let [currentHoveredButton, updateHoveredButton] = useState<string>("");
+    useEffect(() => {
+        return () => {
+            currentHoveredButton = "";
+        }
+    }, [currentHoveredButton]);
 
     const buttonList: NavbarButtonData[] = [
         {
@@ -40,11 +46,11 @@ const Navbar = () => {
         <ul className="h-full flex gap-1 p-0">
             {
                 buttonList.map((singleButton: NavbarButtonData, index: React.Key) => {
-                    return <li key={index} 
-                        className="w-30 flex justify-center items-center cursor-pointer" 
-                        onMouseOver={() => updateHoveredButton(singleButton.id)}
-                    >
-                        <>{singleButton.text}</>
+                    return <li key={index} onMouseLeave={() => updateHoveredButton("")}>
+                        <NavbarButton 
+                            title={singleButton.text} 
+                            onHover={() => updateHoveredButton(singleButton.id)}>
+                        </NavbarButton>
                         {
                             currentHoveredButton == singleButton.id ?
                             <NavbarDropdown>
