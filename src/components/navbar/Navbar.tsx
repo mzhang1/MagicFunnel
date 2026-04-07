@@ -47,7 +47,7 @@ const Navbar = () => {
         <ul className={blockClassList}>
             {
                 buttonList.map((singleButton: NavbarButtonData, index: number) => {
-                    return <li key={index}>
+                    return <li key={index} onMouseLeave={() => updateHoveredButton("")}>
                         <NavbarButton 
                             title={singleButton.text} 
                             onHover={() => updateHoveredButton(singleButton.id)}>
