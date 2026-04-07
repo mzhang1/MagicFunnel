@@ -47,10 +47,10 @@ const Navbar = () => {
             {
                 buttonList.map((singleButton: NavbarButtonData, index: React.Key) => {
                     return <li key={index} 
-                        className="w-30 flex justify-center items-center cursor-pointer">
+                        className="w-30 flex justify-center items-center cursor-pointer"
+                        onMouseOver={() => updateHoveredButton(singleButton.id)}>
                         <NavbarButton 
-                            title={singleButton.text} 
-                            onHover={() => updateHoveredButton(singleButton.id)}>
+                            title={singleButton.text}>
                         </NavbarButton>
                         {
                             currentHoveredButton == singleButton.id ?
