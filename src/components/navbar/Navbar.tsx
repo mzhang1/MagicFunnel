@@ -13,8 +13,6 @@ const Navbar = () => {
     let [currentHoveredButton, updateHoveredButton] = useState<string>("");
 
     useEffect(() => {
-        console.log(currentHoveredButton);
-
         return () => {
             currentHoveredButton = "";
         }
