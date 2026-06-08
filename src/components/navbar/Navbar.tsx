@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 
 import NavbarButton from "@/components/navbar/NavbarButton";
 import NavbarDropdown from "@/components/navbar/NavbarDropdown";
-import { Button1Dropdown } from "@/components/navbar/dropdowns/Button1Dropdown";
-import { Button2Dropdown } from "@/components/navbar/dropdowns/Button2Dropdown";
-import { Button3Dropdown } from "@/components/navbar/dropdowns/Button3Dropdown";
-import { Button4Dropdown } from "@/components/navbar/dropdowns/Button4Dropdown";
+import { Button1Dropdown } from "@/components/navbar/dropdown/Button1Dropdown";
+import { Button2Dropdown } from "@/components/navbar/dropdown/Button2Dropdown";
+import { Button3Dropdown } from "@/components/navbar/dropdown/Button3Dropdown";
+import { Button4Dropdown } from "@/components/navbar/dropdown/Button4Dropdown";
 
 import type { NavbarButtonData } from "@/components/navbar/types";
 
