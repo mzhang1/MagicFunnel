@@ -13,12 +13,12 @@ export default function useManaColors(colorToggle?: ManaColorToggle)
 {
     const [colorState, setColorState] = useState<ManaColorToggle>(
         colorToggle ?? {
-            White: false,
-            Blue: false,
-            Black: false,
-            Red: false,
-            Green: false,
-            Colorless: false
+            White: true,
+            Blue: true,
+            Black: true,
+            Red: true,
+            Green: true,
+            Colorless: true
         }
     );
 
