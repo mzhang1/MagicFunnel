@@ -39,6 +39,16 @@ module.exports = (env) => {
                 {
                     test: /\.(woff|otf)?$/i,
                     type: 'asset/resource'
+                },
+                {
+                    test: /\.svg?$/i,
+                    use: {
+                        loader: 'svg-url-loader',
+                        options: {
+                            limit: 10000
+                        }
+                    },
+                    exclude: /node_modules/
                 }
             ]
         },
@@ -52,7 +62,8 @@ module.exports = (env) => {
         resolve: {
             extensions: ['.tsx','.ts','.jsx','.js'],
             alias: {
-                '@': path.resolve(__dirname, './src')
+                '@': path.resolve(__dirname, './src'),
+                '@images': path.resolve(__dirname, './src/resources/media/images')
             } 
         },
         plugins: [
