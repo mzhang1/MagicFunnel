@@ -8,9 +8,10 @@ import BlackManaSymbol from '@images/mana/b.svg';
 import RedManaSymbol from '@images/mana/r.svg';
 import GreenManaSymbol from '@images/mana/g.svg';
 
+type ManaColorPickerProps = {
+    defaultManaColorConfig: ManaColorToggle
+}
 
-export default function ManaColorPicker(defaultManaColorConfig: ManaColorToggle){
-    useEffect(() => {
-
-    },[defaultManaColorConfig]);
+export default function ManaColorPicker(props :ManaColorPickerProps){
+    return <div></div>
 }
