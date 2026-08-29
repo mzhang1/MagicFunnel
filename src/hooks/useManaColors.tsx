@@ -1,5 +1,13 @@
 import { useState } from "react";
 
+enum Color {
+    White,
+    Blue,
+    Black,
+    Red,
+    Green
+}
+
 export type ManaColorToggle = {
     White: boolean,
     Blue: boolean,
@@ -22,8 +30,17 @@ export default function useManaColors(colorToggle?: ManaColorToggle)
         }
     );
 
+    const colorHash: object = {
+        White: Color.White,
+        Blue: Color.Blue,
+        Black: Color.Black,
+        Red: Color.Red,
+        Green: Color.Green
+    };
+
     return [
         colorState,
         setColorState,
+        colorHash
     ];
 }
