@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 enum Color {
     White,
@@ -17,7 +17,12 @@ export type ManaColorToggle = {
     Colorless: boolean
 }
 
-export default function useManaColors(colorToggle?: ManaColorToggle)
+export default function useManaColors(colorToggle?: ManaColorToggle) :
+[
+    ManaColorToggle,
+    React.Dispatch<React.SetStateAction<ManaColorToggle>>,
+    Record<string, Color>
+]
 {
     const [colorState, setColorState] = useState<ManaColorToggle>(
         colorToggle ?? {
@@ -30,7 +35,7 @@ export default function useManaColors(colorToggle?: ManaColorToggle)
         }
     );
 
-    const colorHash: object = {
+    const colorHash: Record<string, Color> = {
         White: Color.White,
         Blue: Color.Blue,
         Black: Color.Black,
