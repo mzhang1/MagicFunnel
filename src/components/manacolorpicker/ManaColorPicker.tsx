@@ -13,5 +13,11 @@ type ManaColorPickerProps = {
 }
 
 export default function ManaColorPicker(props :ManaColorPickerProps){
+    const [
+        colorState,
+        setColorState,
+        colorHash
+    ] = useManaColors(props.defaultManaColorConfig);
+    
     return <div></div>
 }
