@@ -19,7 +19,7 @@ export default function ManaColorPicker(props: ManaColorPickerProps){
         colorHash
     ] = useManaColors(props.defaultManaColorConfig);
     
-    return <div className="h-10 flex flex-row">
+    return <div className="h-10 flex flex-row gap-0.5">
         <img src={WhiteManaSymbol} alt="White"/>
         <img src={BlueManaSymbol} alt="Blue"/>
         <img src={BlackManaSymbol} alt="Black"/>
