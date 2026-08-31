@@ -12,7 +12,7 @@ type ManaColorPickerProps = {
     defaultManaColorConfig: ManaColorToggle
 }
 
-export default function ManaColorPicker(props :ManaColorPickerProps){
+export default function ManaColorPicker(props: ManaColorPickerProps){
     const [
         colorState,
         setColorState,
