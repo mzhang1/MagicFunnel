@@ -13,8 +13,7 @@ export type ManaColorToggle = {
 export default function useManaColors(colorToggle?: ManaColorToggle) :
 [
     ManaColorToggle,
-    React.Dispatch<React.SetStateAction<ManaColorToggle>>,
-    Record<string, Color>
+    React.Dispatch<React.SetStateAction<ManaColorToggle>>
 ]
 {
     const [colorState, setColorState] = useState<ManaColorToggle>(
@@ -28,17 +27,8 @@ export default function useManaColors(colorToggle?: ManaColorToggle) :
         }
     );
 
-    const colorHash: Record<string, Color> = {
-        White: Color.White,
-        Blue: Color.Blue,
-        Black: Color.Black,
-        Red: Color.Red,
-        Green: Color.Green
-    };
-
     return [
         colorState,
-        setColorState,
-        colorHash
+        setColorState
     ];
 }

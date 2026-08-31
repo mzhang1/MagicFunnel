@@ -15,8 +15,7 @@ type ManaColorPickerProps = {
 export default function ManaColorPicker(props: ManaColorPickerProps){
     const [
         colorState,
-        setColorState,
-        colorHash
+        setColorState
     ] = useManaColors(props.defaultManaColorConfig);
     
     return <div className="h-10 flex flex-row gap-0.5">
