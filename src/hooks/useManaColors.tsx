@@ -13,7 +13,7 @@ export type ManaColorToggle = {
 export default function useManaColors(colorToggle?: ManaColorToggle) :
 [
     ManaColorToggle,
-    React.Dispatch<React.SetStateAction<ManaColorToggle>>
+    Function
 ]
 {
     const [colorState, setColorState] = useState<ManaColorToggle>(
@@ -27,8 +27,12 @@ export default function useManaColors(colorToggle?: ManaColorToggle) :
         }
     );
 
+    const setUniqueColorState: Function = (color: Color) => {
+
+    }
+
     return [
         colorState,
-        setColorState
+        setUniqueColorState
     ];
 }
