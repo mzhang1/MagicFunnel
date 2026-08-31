@@ -36,5 +36,6 @@ export default function ManaColorPicker(props: ManaColorPickerProps){
     });
 
     return <div className="h-10 flex flex-row gap-0.5">
+        {ColorSymbols}
     </div>
 }
