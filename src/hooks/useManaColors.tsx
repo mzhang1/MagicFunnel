@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-
-enum Color {
-    White,
-    Blue,
-    Black,
-    Red,
-    Green
-}
+import { Color } from "@/enums"
 
 export type ManaColorToggle = {
     White: boolean,
