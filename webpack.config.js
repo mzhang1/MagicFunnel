@@ -37,18 +37,8 @@ module.exports = (env) => {
                     ]
                 },
                 {
-                    test: /\.(woff|otf)?$/i,
+                    test: /\.(woff|otf|svg)?$/i,
                     type: 'asset/resource'
-                },
-                {
-                    test: /\.svg?$/i,
-                    use: {
-                        loader: 'svg-url-loader',
-                        options: {
-                            limit: 10000
-                        }
-                    },
-                    exclude: /node_modules/
                 }
             ]
         },
