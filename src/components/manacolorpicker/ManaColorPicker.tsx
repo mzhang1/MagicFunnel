@@ -21,10 +21,10 @@ manaColorMap.set(Color.Red, RedManaSymbol);
 manaColorMap.set(Color.Green, GreenManaSymbol);
 
 export default function ManaColorPicker(props: ManaColorPickerProps){
-    const [colorState,setColorState] = useManaColors(props.defaultManaColorConfig);
+    const [colorState,setSingleColorState] = useManaColors(props.defaultManaColorConfig);
 
     const handleColorChange: Function = (event: MouseEvent, color: Color) => {
-
+        
     }
 
     const ColorSymbols: ReactElement[] = [];
