@@ -1,0 +1,18 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "paths": {
+            "@/*": ["./src/*"],
+            "@images/*": ["./src/resources/media/images/*"]
+        },
+        "rootDir": "./src",
+        "outDir": "./dist"
+    },
+    "include": [
+        "src/**/*",
+        "custom.d.ts"
+    ],
+    "exclude": [
+        "./dist"
+    ]
+}
