@@ -1,0 +1,6 @@
+export class HashMap<K, V>
+{
+    constructor(){
+
+    }
+}
