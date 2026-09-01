@@ -19,6 +19,7 @@
         "skipLibCheck": true,
         "esModuleInterop": true,
         "lib": ["dom", "esnext"],
+        "types": ["jest"],
         "moduleResolution": "bundler"
     },
     "include": [
