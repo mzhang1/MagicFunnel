@@ -41,6 +41,7 @@
     "svg-inline-loader": "^0.8.2",
     "svg-url-loader": "^8.1.0",
     "tailwindcss": "^4.1.18",
+    "ts-jest": "^29.4.12",
     "ts-loader": "^9.5.4",
     "typescript": "^5.9.3",
     "webpack": "^5.104.1",
