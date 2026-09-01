@@ -1,26 +1,12 @@
 {
+    "extends": "./configs/base",
     "compilerOptions": {
         "paths": {
             "@/*": ["./src/*"],
             "@images/*": ["./src/resources/media/images/*"]
         },
         "rootDir": "./src",
-        "outDir": "./dist",
-        "module": "es6",
-        "target": "es6",
-        "sourceMap": true,
-        "declaration": true,
-        "declarationMap": true,
-        "strict": true,
-        "jsx": "react-jsx",
-        "verbatimModuleSyntax": true,
-        "isolatedModules": true,
-        "noUncheckedSideEffectImports": true,
-        "skipLibCheck": true,
-        "esModuleInterop": true,
-        "lib": ["dom", "esnext"],
-        "types": ["jest"],
-        "moduleResolution": "bundler"
+        "outDir": "./dist"
     },
     "include": [
         "src/**/*",
