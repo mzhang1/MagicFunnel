@@ -6,7 +6,8 @@
             "@images/*": ["./src/resources/media/images/*"]
         },
         "rootDir": "./src",
-        "outDir": "./dist"
+        "outDir": "./dist",
+        "composite": true
     },
     "include": [
         "src/**/*",
