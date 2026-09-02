@@ -14,5 +14,9 @@
         "esModuleInterop": true,
         "lib": ["dom", "esnext"],
         "moduleResolution": "bundler"
-    }
+    },
+    "references": [
+        { "path": "./src/tsconfig.app.json" },
+        { "path": "./test/tsconfig.test.json" }
+    ]
 }
