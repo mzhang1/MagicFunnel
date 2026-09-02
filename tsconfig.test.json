@@ -1,0 +1,7 @@
+{
+    "extends": "./tsconfig.json",
+    "types": ["jest"],
+    "include": [
+        "../test/**/*"
+    ]
+}
