@@ -1,0 +1,15 @@
+{
+    "extends": "./../tsconfig.json",
+    "compilerOptions": {
+        "paths": {
+            "@/*": ["/src/*"],
+            "@images/*": ["/src/resources/media/images/*"]
+        },
+        "types": ["@types/jest"],
+        "composite": true
+    },
+    "include": [
+        "/**/*",
+        "../src/**/*"
+    ]
+}
