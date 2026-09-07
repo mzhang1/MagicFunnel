@@ -22,5 +22,9 @@
     "references": [
         { "path": "./src/tsconfig.app.json" },
         { "path": "./test/tsconfig.test.json" }
+    ],
+    "exclude": [
+        "src",
+        "test"
     ]
 }
