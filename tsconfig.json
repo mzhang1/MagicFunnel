@@ -1,9 +1,5 @@
 {
     "compilerOptions": {
-        "paths": {
-            "@/*": ["./src/*"],
-            "@images/*": ["./src/resources/media/images/*"]
-        },
         "module": "es6",
         "target": "es6",
         "sourceMap": true,
