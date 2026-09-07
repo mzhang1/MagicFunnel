@@ -1,11 +1,16 @@
 {
     "extends": "./../tsconfig.json",
     "compilerOptions": {
+        "paths": {
+            "@/*": ["../src/*"]
+        },
         "types": ["@types/jest"],
-        "composite": true
+        "composite": true,
+        "rootDir": "../"
     },
     "include": [
-        "./../src/*",
+        "./../src",
+        "./../test"
     ],
     "exclude": [
         "./../dist"
