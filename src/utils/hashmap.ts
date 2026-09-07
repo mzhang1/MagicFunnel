@@ -1,6 +1,8 @@
 export class HashMap<K, V>
 {
-    constructor(){
+    private dataSet = new Map<K, V>();
 
+    constructor(){
+        
     }
 }
