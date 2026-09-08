@@ -4,7 +4,7 @@
         "paths": {
             "@/*": ["../src/*"]
         },
-        "types": ["@types/jest"],
+        "types": ["@types/jest", "@types/node"],
         "composite": true,
         "rootDir": "../"
     },
