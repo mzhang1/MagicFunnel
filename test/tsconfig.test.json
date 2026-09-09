@@ -6,7 +6,10 @@
         },
         "types": ["@types/jest", "@types/node"],
         "composite": true,
-        "rootDir": "../"
+        "rootDir": "../",
+        "module": "es2022",
+        "target": "esnext",
+        "esModuleInterop": true
     },
     "include": [
         "./../src",
