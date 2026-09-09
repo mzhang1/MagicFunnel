@@ -7,8 +7,10 @@ module.exports = {
   preset: "ts-jest",
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths), 
   transform: {
-    '^.+\\.(ts|tsx)$': ['ts-jest', {
-      tsconfig: './test/tsconfig.test.json'
-    }]
+    '^.+\\.(ts|tsx)$': [
+      'ts-jest', {
+        tsconfig: './test/tsconfig.test.json'
+      }
+    ]
   }
 };
