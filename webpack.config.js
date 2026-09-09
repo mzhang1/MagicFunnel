@@ -1,10 +1,11 @@
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('node:path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import path from 'node:path';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
-module.exports = (env) => {
+export default (env) => {
+    const __dirname = import.meta.dirname;
     const devMode = !env.prod;
     return {
         entry: {
