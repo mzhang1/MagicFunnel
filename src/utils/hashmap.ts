@@ -5,4 +5,8 @@ export class HashMap<K, V>
     constructor(){
         
     }
+
+    set(keyValue: K, value: V){
+        
+    }
 }
