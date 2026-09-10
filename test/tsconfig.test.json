@@ -2,7 +2,7 @@
     "extends": "./../tsconfig.json",
     "compilerOptions": {
         "paths": {
-            "@/*": ["../src/*"]
+            "@/*": ["./../src/*"]
         },
         "types": ["@types/jest", "@types/node"],
         "composite": true,
@@ -13,7 +13,8 @@
     },
     "include": [
         "./../src",
-        "./../test"
+        "./../test", 
+        "../jest.config.js"
     ],
     "exclude": [
         "./../dist"
