@@ -1,4 +1,4 @@
-import { HashMap } from "./../../src/utils/hashmap";
+import { HashMap } from "@/utils/hashmap";
 
 describe('Hashtable check functions', () => {
     it("should not be null", () => {
