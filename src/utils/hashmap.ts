@@ -6,7 +6,7 @@ export class HashMap<K, V>
         
     }
 
-    set(keyValue: K, value: V){
+    set(keyValue: K, value: V): void {
         
     }
 }
