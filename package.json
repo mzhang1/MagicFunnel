@@ -19,7 +19,8 @@
     "build": "webpack --watch --env prod=true",
     "serve": "webpack serve --env port=8088 prod=false",
     "analyze": "webpack-bundle-analyzer dist/stats.json",
-    "test": "jest"
+    "test": "jest",
+    "checkjest": "npx jest --showConfig"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
