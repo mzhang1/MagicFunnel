@@ -16,7 +16,7 @@ export class HashMap<K, V>
         return this.dataSet.size;
     }
 
-    map<R>(inputFunc: <K, V, R>(key: K, value: V) => R) : R[] {
+    map<R>(inputFunc: <K, V, R>(value: V, key: K) => R) : R[] {
         const result: R[] = [];
         return result;
     };
