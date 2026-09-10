@@ -7,6 +7,10 @@ export class HashMap<K, V>
     }
 
     set(keyValue: K, value: V): void {
-        
+
+    }
+
+    count() : number {
+        return this.dataSet.size;
     }
 }
