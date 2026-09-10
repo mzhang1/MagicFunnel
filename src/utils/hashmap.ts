@@ -2,8 +2,9 @@ export class HashMap<K, V>
 {
     private dataSet;
 
-    constructor(){
-        this.dataSet = new Map<K, V>();
+    constructor();
+    constructor(inputMap?: Map<K, V>){
+        this.dataSet = inputMap ?? new Map<K, V>();
     }
 
     set(key: K, value: V): void {
