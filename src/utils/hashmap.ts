@@ -3,6 +3,7 @@ export class HashMap<K, V>
     private dataSet;
 
     constructor();
+    constructor(inputMap: Map<K, V>);
     constructor(inputMap?: Map<K, V>){
         this.dataSet = inputMap ?? new Map<K, V>();
     }
