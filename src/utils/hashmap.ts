@@ -6,8 +6,8 @@ export class HashMap<K, V>
         
     }
 
-    set(keyValue: K, value: V): void {
-
+    set(key: K, value: V): void {
+        this.dataSet.set(key, value);
     }
 
     count() : number {
