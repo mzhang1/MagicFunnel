@@ -15,4 +15,8 @@ export class HashMap<K, V>
     count() : number {
         return this.dataSet.size;
     }
+
+    map(inputFunc: <K, V, R>(key: K, value: V) => R) {
+           
+    };
 }
