@@ -1,3 +1,5 @@
+export type CallbackFunc<K, V, R> = (key: K, value: V) => R;
+
 export class HashMap<K, V>
 {
     private dataSet;
@@ -16,7 +18,7 @@ export class HashMap<K, V>
         return this.dataSet.size;
     }
 
-    map(inputFunc: <K, V, R>(key: K, value: V) => R) {
-           
+    map<R>(inputFunc: CallbackFunc<K, V, R>) : Record<K, R> {
+ 
     };
 }
