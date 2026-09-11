@@ -18,7 +18,8 @@ export class HashMap<K extends number | string | symbol, V>
         return this.dataSet.size;
     }
 
-    map<R>(inputFunc: CallbackFunc<K, V, R>) : Record<K, R> {
- 
+    map<R>(inputFunc: CallbackFunc<K, V, R>) : Partial<Record<K, R>> {
+        let result: Partial<Record<K,R>> = {};
+        return result;
     };
 }

@@ -24,7 +24,7 @@ describe('Hashtable map expected behavior', () => {
         const double = (key: number, value: number) : number => {
             return value *= 2;
         };
-        const result: Record<number, number> = simpleHashmap.map<number>(double);
+        const result: Partial<Record<number, number>> = simpleHashmap.map<number>(double);
         expect(result[0]).toBe(300);
         expect(result[1]).toBe(600);
         expect(result[2]).toBe(1200);
