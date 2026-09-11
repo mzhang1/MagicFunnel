@@ -28,6 +28,10 @@ export class HashMap<K extends number | string | symbol, V>
      */
     map<R>(inputFunc: CallbackFunc<K, V, R>) : Partial<Record<K, R>> {
         let result: Partial<Record<K,R>> = {};
+        this.dataSet.forEach((value: V, key: K) => {
+            const recordResult: R = inputFunc(key, value);
+            result[key] = recordResult;
+        });
         return result;
     };
 }
