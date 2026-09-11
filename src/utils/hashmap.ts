@@ -27,7 +27,7 @@ export class HashMap<K extends number | string | symbol, V>
      * @returns A Record variable with the specified generic type. Can be empty with Partial Utility type
      */
     map<R>(inputFunc: CallbackFunc<K, V, R>) : Partial<Record<K, R>> {
-        let result: Partial<Record<K,R>> = {};
+        let result: Partial<Record<K, R>> = {};
         this.dataSet.forEach((value: V, key: K) => {
             const recordResult: R = inputFunc(key, value);
             result[key] = recordResult;
