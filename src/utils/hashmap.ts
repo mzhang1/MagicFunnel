@@ -1,6 +1,6 @@
-export type CallbackFunc<K, V, R> = (key: K, value: V) => R;
+export type CallbackFunc<K extends number | string | symbol, V, R> = (key: K, value: V) => R;
 
-export class HashMap<K, V>
+export class HashMap<K extends number | string | symbol, V>
 {
     private dataSet;
 
