@@ -29,4 +29,19 @@ describe('Hashtable map expected behavior', () => {
         expect(result[1]).toBe(600);
         expect(result[2]).toBe(1200);
     });
+
+    it("should be able to receive non number keys", () => {
+        let simpleHashmap: HashMap<string, number> = new HashMap();
+        simpleHashmap.set("a", 150);
+        simpleHashmap.set("b", 300);
+        simpleHashmap.set("c", 600);
+
+        const double = (key: string, value: number) : number => {
+            return value *= 2;
+        };
+        const result: Partial<Record<string, number>> = simpleHashmap.map<number>(double);
+        expect(result["a"]).toBe(300);
+        expect(result["b"]).toBe(600);
+        expect(result["c"]).toBe(1200);
+    });
 });
