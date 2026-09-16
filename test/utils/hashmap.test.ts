@@ -1,21 +1,21 @@
-import { HashMap } from "@/utils/hashmap";
+import { HashMap } from '@/utils/hashmap';
 
 describe('Hashtable basic functions', () => {
     let hashmap: HashMap<number, string> = new HashMap();
-    it("should not be null", () => {
+    it('should not be null', () => {
         expect(hashmap).not.toBeNull();
     });
 
-    it("should be able to receive data", () => {
-        hashmap.set(1, "The Queen of Dale");
-        hashmap.set(2, "The Royal Scions");
-        hashmap.set(3, "Force of Will");
+    it('should be able to receive data', () => {
+        hashmap.set(1, 'The Queen of Dale');
+        hashmap.set(2, 'The Royal Scions');
+        hashmap.set(3, 'Force of Will');
         expect(hashmap.count()).toBe(3);
     });
 });
 
 describe('Hashtable map expected behavior', () => {
-    it("should be able to output basic results correctly", () => {
+    it('should be able to output basic results correctly', () => {
         let simpleHashmap: HashMap<number, number> = new HashMap();
         simpleHashmap.set(0, 150);
         simpleHashmap.set(1, 300);
@@ -30,18 +30,18 @@ describe('Hashtable map expected behavior', () => {
         expect(result[2]).toBe(1200);
     });
 
-    it("should be able to receive non number keys", () => {
+    it('should be able to receive non number keys', () => {
         let simpleHashmap: HashMap<string, number> = new HashMap();
-        simpleHashmap.set("a", 150);
-        simpleHashmap.set("b", 300);
-        simpleHashmap.set("c", 600);
+        simpleHashmap.set('a', 150);
+        simpleHashmap.set('b', 300);
+        simpleHashmap.set('c', 600);
 
         const double = (key: string, value: number) : number => {
             return value *= 2;
         };
         const result: Partial<Record<string, number>> = simpleHashmap.map<number>(double);
-        expect(result["a"]).toBe(300);
-        expect(result["b"]).toBe(600);
-        expect(result["c"]).toBe(1200);
+        expect(result['a']).toBe(300);
+        expect(result['b']).toBe(600);
+        expect(result['c']).toBe(1200);
     });
 });
