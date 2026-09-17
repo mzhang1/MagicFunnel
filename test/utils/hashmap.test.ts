@@ -16,7 +16,21 @@ describe('Hashtable basic functions', () => {
 
 describe('Hashtable map expected behavior', () => {
     it('should output enum keyed map values correctly', () => {
-        
+        enum Color {
+            White = 1,
+            Blue = 2,
+            Black = 4,
+            Red = 8,
+            Green = 16
+        };
+
+        const MapValues: Map<Color, boolean> = new Map([
+            [Color.White, true],
+            [Color.Blue, true],
+            [Color.Black, false],
+            [Color.Red, true],
+            [Color.Green, false]
+        ]);
     });
 });
 
