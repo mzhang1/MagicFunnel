@@ -31,6 +31,14 @@ describe('Hashtable map expected behavior', () => {
             [Color.Red, true],
             [Color.Green, false]
         ]);
+        const simpleHashmap = new HashMap(MapValues);
+        const reverse = (key: Color, value: boolean) : boolean => {
+            return !value;
+        };
+        const result: Map<Color, boolean> = simpleHashmap.map<boolean>(reverse);
+
+        expect(result.get(Color.Black)).toBe(true);
+        expect(result.get(Color.Blue)).toBe(false);
     });
 });
 
