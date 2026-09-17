@@ -2,8 +2,6 @@ import { useEffect, type ReactElement } from 'react';
 import useManaColors, { type ManaColorToggle } from '@/hooks/useManaColors';
 import { Color } from "@/enums";
 
-import { HashMap } from '@/utils/hashmap';
-
 import WhiteManaSymbol from '@images/mana/w.svg';
 import BlueManaSymbol from '@images/mana/u.svg';
 import BlackManaSymbol from '@images/mana/b.svg';
