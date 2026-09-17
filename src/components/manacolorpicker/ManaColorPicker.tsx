@@ -1,6 +1,5 @@
 import { useEffect, type ReactElement } from 'react';
-import type { ManaColorToggle } from '@/hooks/useManaColors';
-import useManaColors from '@/hooks/useManaColors';
+import useManaColors, { type ManaColorToggle } from '@/hooks/useManaColors';
 import { Color } from "@/enums";
 
 import { HashMap } from '@/utils/hashmap';
