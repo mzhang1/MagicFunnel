@@ -18,6 +18,11 @@ export class HashMap<K extends number | string | symbol, V>
         return this.dataSet.size;
     }
 
+    map<R>(inputFunc: CallbackFunc<K, V, R>) : Map<K, R> {
+        let result: Map<K, R> = new Map();
+        return result;
+    }
+
     /**
      * Loops through all the records of this.dataSet and performs the inputFunc for each
      * of them, expecting to return a value for each. this aims to emulate array.map from 
