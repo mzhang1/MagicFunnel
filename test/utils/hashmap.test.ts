@@ -35,15 +35,16 @@ describe('Hashtable map expected behavior', () => {
 });
 
 describe('Hashtable recordMap expected behavior', () => {
+    const double = (key: string, value: number) : number => {
+        return value *= 2;
+    };
+
     it('should be able to output basic results correctly', () => {
         let simpleHashmap: HashMap<number, number> = new HashMap();
         simpleHashmap.set(0, 150);
         simpleHashmap.set(1, 300);
         simpleHashmap.set(2, 600);
 
-        const double = (key: number, value: number) : number => {
-            return value *= 2;
-        };
         const result: Partial<Record<number, number>> = simpleHashmap.recordMap<number>(double);
         expect(result[0]).toBe(300);
         expect(result[1]).toBe(600);
@@ -56,9 +57,6 @@ describe('Hashtable recordMap expected behavior', () => {
         simpleHashmap.set('b', 300);
         simpleHashmap.set('c', 600);
 
-        const double = (key: string, value: number) : number => {
-            return value *= 2;
-        };
         const result: Partial<Record<string, number>> = simpleHashmap.recordMap<number>(double);
         expect(result['a']).toBe(300);
         expect(result['b']).toBe(600);
