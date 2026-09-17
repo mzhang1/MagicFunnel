@@ -14,6 +14,12 @@ describe('Hashtable basic functions', () => {
     });
 });
 
+describe('Hashtable map expected behavior', () => {
+    it('should output enum keyed map values correctly', () => {
+        
+    });
+});
+
 describe('Hashtable recordMap expected behavior', () => {
     it('should be able to output basic results correctly', () => {
         let simpleHashmap: HashMap<number, number> = new HashMap();
