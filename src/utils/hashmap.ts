@@ -2,7 +2,7 @@ export type CallbackFunc<K extends number | string | symbol, V, R> = (key: K, va
 
 export class HashMap<K extends number | string | symbol, V>
 {
-    private dataSet;
+    private dataSet: Map<K, V>;
 
     constructor();
     constructor(inputMap: Map<K, V>);
