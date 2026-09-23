@@ -13,7 +13,7 @@ describe('Hashtable basic functions', () => {
         expect(hashmap.count()).toBe(3);
     });
 
-    it('should be able to be constructed with data', () => {
+    it('should be able to be constructed with map data', () => {
         let inputMap: Map<number, string> = new Map([
             [1, 'The Queen of Dale'],
             [2, 'The Royal Scions'],
