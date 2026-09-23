@@ -11,23 +11,13 @@ export type ManaColorToggle = {
     Colorless: boolean
 }
 
-export default function useManaColors(colorToggle?: ManaColorToggle) :
+export default function useManaColors(colorToggle: HashMap<Color, boolean>) :
 [
-    ManaColorToggle,
+    HashMap<Color, boolean>,
     Function
 ]
 {
-    const [colorState, setColorState] = useState<ManaColorToggle>(
-        colorToggle ?? {
-            White: true,
-            Blue: true,
-            Black: true,
-            Red: true,
-            Green: true,
-            Colorless: true
-        }
-    );
-
+    const [colorState, setColorState] = useState(colorToggle);
     const setUniqueColorState: Function = (color: Color, newStatus: boolean) => {
 
     }
