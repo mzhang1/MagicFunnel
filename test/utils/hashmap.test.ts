@@ -13,6 +13,16 @@ describe('Hashtable basic functions', () => {
         expect(hashmap.count()).toBe(3);
     });
 
+    it('should be able to be constructed with a simple iterable', () => {
+        let hashmap: HashMap<number, string> = new HashMap([
+            [1, 'The Queen of Dale'],
+            [2, 'The Royal Scions'],
+            [3, 'Force of will']
+        ]);
+        expect(hashmap.count()).toBe(3);
+        expect(hashmap.get(3)).toBe('Force of will');
+    });
+
     it('should be able to be constructed with map data', () => {
         let inputMap: Map<number, string> = new Map([
             [1, 'The Queen of Dale'],
