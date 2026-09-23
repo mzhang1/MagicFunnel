@@ -10,6 +10,10 @@ export class HashMap<K extends number | string | symbol, V>
         this.dataSet = inputMap ?? new Map<K, V>();
     }
 
+    get(key: K) : V | null | undefined {
+        return this.dataSet.get(key);
+    }
+
     set(key: K, value: V): void {
         this.dataSet.set(key, value);
     }
