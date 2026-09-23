@@ -22,7 +22,7 @@ describe('Hashtable basic functions', () => {
         let hashmap: HashMap<number, string> = new HashMap(inputMap);
         expect(hashmap.count()).toBe(3);
         expect(hashmap.get(1)).toBe('The Queen of Dale');
-    })
+    });
 });
 
 describe('Hashtable map expected behavior', () => {
