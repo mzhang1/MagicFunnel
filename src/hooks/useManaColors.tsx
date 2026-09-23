@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Color } from "@/enums";
+import { HashMap } from "@/utils/hashmap";
 
 export type ManaColorToggle = {
     White: boolean,
