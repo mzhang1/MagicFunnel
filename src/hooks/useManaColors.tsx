@@ -27,7 +27,7 @@ export default function useManaColors(colorToggle?: ManaColorToggle) :
         }
     );
 
-    const setUniqueColorState: Function = (color: Color) => {
+    const setUniqueColorState: Function = (color: Color, newStatus: boolean) => {
 
     }
 
