@@ -1,5 +1,5 @@
 import { type ReactElement } from 'react';
-import useManaColors, { type ManaColorToggle } from '@/hooks/useManaColors';
+import useManaColors from '@/hooks/useManaColors';
 import { Color } from "@/enums";
 
 import WhiteManaSymbol from '@images/mana/w.svg';
@@ -8,10 +8,6 @@ import BlackManaSymbol from '@images/mana/b.svg';
 import RedManaSymbol from '@images/mana/r.svg';
 import GreenManaSymbol from '@images/mana/g.svg';
 
-type ManaColorPickerProps = {
-    defaultManaColorConfig: ManaColorToggle
-}
-
 let manaColorMap: Map<Color, string> = new Map();
 manaColorMap.set(Color.White, WhiteManaSymbol);
 manaColorMap.set(Color.Blue, BlueManaSymbol);
@@ -19,9 +15,7 @@ manaColorMap.set(Color.Black, BlackManaSymbol);
 manaColorMap.set(Color.Red, RedManaSymbol);
 manaColorMap.set(Color.Green, GreenManaSymbol);
 
-export default function ManaColorPicker(props: ManaColorPickerProps){
-    const [colorState,setSingleColorState] = useManaColors(props.defaultManaColorConfig);
-
+export default function ManaColorPicker(){
     const handleColorChange: Function = (event: MouseEvent, color: Color) => {
         
     }
